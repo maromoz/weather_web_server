@@ -19,7 +19,8 @@ from django.contrib import admin
 from cities import views
 
 urlpatterns = [
-    url(r'^cities/', views.cities),
+    url(r'^get_cities/', views.get_cities),
+    url(r'^get_city_temp/', views.get_city_temp),
     url(r'^admin/', admin.site.urls),
     url(r'^favorite/', views.favorite),
     url(r'^add_to_favorite/', views.add_to_favorite),

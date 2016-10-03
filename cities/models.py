@@ -2,7 +2,17 @@ from __future__ import unicode_literals
 
 from django.db import models
 
-# Create your models here.
+# This is an auto-generated Django model module.
+# You'll have to do the following manually to clean this up:
+#   * Rearrange models' order
+#   * Make sure each model has one field with primary_key=True
+#   * Make sure each ForeignKey has `on_delete` set to the desired behavior.
+#   * Remove `managed = False` lines if you wish to allow Django to create, modify, and delete the table
+# Feel free to rename the models, but don't rename db_table values or field names.
+
+from django.db import models
+
+
 class AuthGroup(models.Model):
     name = models.CharField(unique=True, max_length=80)
 
@@ -69,9 +79,8 @@ class AuthUserUserPermissions(models.Model):
         unique_together = (('user', 'permission'),)
 
 
-#@python_2_unicode_compatible
 class Cities(models.Model):
-#    id = models.AutoField()
+    #id = models.AutoField()
     name = models.CharField(unique=True, max_length=255, blank=True, null=True)
     temprature = models.FloatField(blank=True, null=True)
     humidity = models.FloatField(blank=True, null=True)
@@ -81,9 +90,6 @@ class Cities(models.Model):
     country_initials = models.CharField(max_length=45)
     last_updated = models.DateTimeField()
 
-    def __str__(self):
-        return self.name + "\n"
-
     class Meta:
         managed = False
         db_table = 'cities'
@@ -91,7 +97,7 @@ class Cities(models.Model):
 
 
 class Countries(models.Model):
-#    id = models.AutoField()
+    #id = models.AutoField()
     name = models.CharField(max_length=255)
     initials = models.CharField(max_length=45)
     last_updated = models.CharField(max_length=45, blank=True, null=True)
@@ -144,6 +150,14 @@ class DjangoSession(models.Model):
     class Meta:
         managed = False
         db_table = 'django_session'
+
+
+class Favorite(models.Model):
+    name = models.CharField(unique=True, max_length=255, blank=True, null=True)
+
+    class Meta:
+        managed = False
+        db_table = 'favorite'
 
 
 class PollsChoice(models.Model):
