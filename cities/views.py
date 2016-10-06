@@ -4,6 +4,8 @@ from django.shortcuts import render
 from django.db import connection
 from django.http import HttpResponse
 from cities.models import Cities, Favorite
+from django.template import Context
+from django.template import loader
 
 
 def get_cities(request):
@@ -11,19 +13,31 @@ def get_cities(request):
     response = ""
     for item in cities:
         city_name = item.name
-        response += "%s<br>" % (city_name)
-    return HttpResponse(response)
+        response += "%s<br>" % city_name
+
+    template = loader.get_template('get_cities.html')
+    context = Context({
+        'cities': cities
+    })
+    return HttpResponse(template.render(context))
 
 
 def get_city_temp(request):
+    params = request.GET
     if 'name' not in request.GET:
-        return HttpResponse("please specify name of city")
+        template = loader.get_template('get_city_temp.html')
+        return HttpResponse(template.render())
+
+    if params["name"] == "":
+        response = "Please enter a city and press enter"
+        return HttpResponse(response)
+
     name = request.GET.get('name')
     city_list = Cities.objects.filter(name=name)
     if len(city_list) == 0:
         return HttpResponse("Oops, the city you have asked is not available")
     city_temperature = city_list[0].temprature
-    temp_response = "%s<br>" % city_temperature
+    temp_response = "The temperature in %s is %s<br>" % (name,city_temperature)
     return HttpResponse(temp_response)
 
 
@@ -33,7 +47,12 @@ def get_favorite(request):
     for item in favorite_list:
         favorite_name = item.name
         response += "%s<br>" % favorite_name
-    return HttpResponse(response)
+
+    template = loader.get_template('get_favorite.html')
+    context = Context({
+        'favorite': favorite_list
+    })
+    return HttpResponse(template.render(context))
 
 
 def add_city_to_favorite(request):
