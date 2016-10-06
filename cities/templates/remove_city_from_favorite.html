@@ -1,0 +1,25 @@
+{% load staticfiles %}
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/remove_city_from_favorite.css' %}">
+    </head>
+    <body>
+        <div class="container">
+            <span class="input-group-addon" id="basic-addon1">Enter a city name in order to remove it from the favorite list
+            <form action="." method="get">
+                <input type="text" name="remove" class="form-control" placeholder="City" aria-describedby="basic-addon1">
+                <input type="submit" value="Enter" class="btn btn-default"/>
+            </form>
+            </span>
+        </div>
+    </body>
+</html>

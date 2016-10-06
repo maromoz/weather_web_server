@@ -56,8 +56,15 @@ def get_favorite(request):
 
 
 def add_city_to_favorite(request):
+    params = request.GET
     if 'add' not in request.GET:
-        return HttpResponse("please write the word add before the name of the city")
+        template = loader.get_template('add_city_to_favorite.html')
+        return HttpResponse(template.render())
+
+    if params["add"] == "":
+        response = "Please enter a city and press enter"
+        return HttpResponse(response)
+
     name = request.GET.get('add')
     city_list = Cities.objects.filter(name=name)
     if len(city_list) == 0:
@@ -71,8 +78,15 @@ def add_city_to_favorite(request):
 
 
 def remove_city_from_favorite(request):
+    params = request.GET
     if 'remove' not in request.GET:
-        return HttpResponse("please write the word remove before the name of the city")
+        template = loader.get_template('remove_city_from_favorite.html')
+        return HttpResponse(template.render())
+
+    if params["remove"] == "":
+        response = "Please enter a city and press enter"
+        return HttpResponse(response)
+
     name = request.GET.get('remove')
     favorite_list = Favorite.objects.filter(name=name)
     if len(favorite_list) == 0:
