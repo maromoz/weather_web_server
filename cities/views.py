@@ -1,12 +1,16 @@
+# -*- coding: utf-8 -*-
 from django.shortcuts import render
-
 # Create your views here.
 from django.db import connection
 from django.http import HttpResponse
 from cities.models import Cities, Favorite
 from django.template import Context
 from django.template import loader
-
+from django.utils.encoding import smart_str, smart_unicode
+import math
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 def get_cities(request):
     cities = Cities.objects.all()
@@ -36,8 +40,9 @@ def get_city_temp(request):
     city_list = Cities.objects.filter(name=name)
     if len(city_list) == 0:
         return HttpResponse("Oops, the city you have asked is not available")
-    city_temperature = city_list[0].temprature
-    temp_response = "The temperature in %s is %s<br>" % (name,city_temperature)
+    city_temperature = int(math.ceil(city_list[0].temperature))
+    celsius_str = smart_str(u"\u2103")
+    temp_response = "The temperature in %s is %s%s" % (name, city_temperature, celsius_str)
     return HttpResponse(temp_response)
 
 
@@ -46,11 +51,14 @@ def get_favorite(request):
     response = ""
     for item in favorite_list:
         favorite_name = item.name
-        response += "%s<br>" % favorite_name
+        city_temperature = item.temperature
+        response += "%s - %s" % (favorite_name, city_temperature)
 
+    degree = "℃"
     template = loader.get_template('get_favorite.html')
     context = Context({
-        'favorite': favorite_list
+        'favorite': favorite_list,
+        "stuff": {'degree': degree}
     })
     return HttpResponse(template.render(context))
 
@@ -72,7 +80,8 @@ def add_city_to_favorite(request):
     favorite_list = Favorite.objects.filter(name=name)
     if len(favorite_list) >= 1:
         return HttpResponse("The city already exists in the favorite list")
-    f = Favorite(name=name)
+    city_temperature = city_list[0].temperature
+    f = Favorite(name=name, temperature=city_temperature)
     f.save()
     return HttpResponse("The city was added to your favorite list (:")
 

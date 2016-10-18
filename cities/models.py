@@ -1,3 +1,4 @@
+# coding=utf-8
 from __future__ import unicode_literals
 
 from django.db import models
@@ -11,6 +12,7 @@ from django.db import models
 # Feel free to rename the models, but don't rename db_table values or field names.
 
 from django.db import models
+from django.forms import forms, RadioSelect
 
 
 class AuthGroup(models.Model):
@@ -82,13 +84,14 @@ class AuthUserUserPermissions(models.Model):
 class Cities(models.Model):
     #id = models.AutoField()
     name = models.CharField(unique=True, max_length=255, blank=True, null=True)
-    temprature = models.FloatField(blank=True, null=True)
+    temperature = models.FloatField(blank=True, null=True)
     humidity = models.FloatField(blank=True, null=True)
     pressure = models.FloatField(blank=True, null=True)
-    temprature_min = models.FloatField(blank=True, null=True)
-    temprature_max = models.FloatField(blank=True, null=True)
+    temperature_min = models.FloatField(blank=True, null=True)
+    temperature_max = models.FloatField(blank=True, null=True)
     country_initials = models.CharField(max_length=45)
     last_updated = models.DateTimeField()
+
 
     class Meta:
         managed = False
@@ -154,6 +157,8 @@ class DjangoSession(models.Model):
 
 class Favorite(models.Model):
     name = models.CharField(unique=True, max_length=255, blank=True, null=True)
+    temperature = models.FloatField(blank=True, null=True)
+
 
     class Meta:
         managed = False
