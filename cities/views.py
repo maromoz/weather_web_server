@@ -47,10 +47,18 @@ def get_city_temp(request):
     city_list = Cities.objects.filter(name=name)
     if len(city_list) == 0:
         return HttpResponse("Oops, the city you have asked is not available")
-    city_temperature = int(math.ceil(city_list[0].temperature))
-    celsius_str = smart_str(u"\u2103")
-    temp_response = "The temperature in %s is %s%s" % (name, city_temperature, celsius_str)
-    return HttpResponse(temp_response)
+    for item in city_list:
+        city_name = item.name
+        city_temperature = item.temperature
+        city_humidity = item.humidity
+        city_pressure = item.pressure
+        last_updated = item.last_updated
+   # temp_response = "The temperature in %s is %s%s" % (name, city_temperature, celsius_str)
+    template = loader.get_template('city_weather.html')
+    context = Context({
+        'city': city_list,
+    })
+    return HttpResponse(template.render(context))
 
 
 def get_favorite(request):
