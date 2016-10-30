@@ -16,6 +16,18 @@ h4 {
   border: 1px solid #ddd;
   border: 1px solid rgba(86,61,124,.2);
 }
+label{
+    padding:5px;
+    color:#222;
+    font-family:corbel,sans-serif;
+    font-size: 14px;
+    margin: 0px;
+}
+
+input[type="radio"] {
+  margin-top: -1px;
+  horiz-align: middle
+}
 
 hr {
   margin-top: 40px;

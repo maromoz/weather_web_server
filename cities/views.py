@@ -1,16 +1,23 @@
 # -*- coding: utf-8 -*-
-from django.shortcuts import render
+from audioop import reverse
+
+from django.http import HttpResponseRedirect
+from django.shortcuts import render, render_to_response, redirect
 # Create your views here.
 from django.db import connection
 from django.http import HttpResponse
+from django.template import RequestContext
+
 from cities.models import Cities, Favorite
 from django.template import Context
 from django.template import loader
 from django.utils.encoding import smart_str, smart_unicode
 import math
 import sys
+
 reload(sys)
 sys.setdefaultencoding('utf8')
+
 
 def get_cities(request):
     cities = Cities.objects.all()
@@ -47,6 +54,7 @@ def get_city_temp(request):
 
 
 def get_favorite(request):
+    print request.GET
     favorite_list = Favorite.objects.all()
     response = ""
     for item in favorite_list:

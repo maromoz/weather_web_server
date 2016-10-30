@@ -21,6 +21,14 @@
                 </div>
             {% endfor %}
         </div>
+            <div class="myradio">
+<div class="myradio">
+    <form action="." method="get">
+    <label for="celsius"><input id="celsius" name="degree" type="radio"  value="Celsius" required /> Celsius</label>
+            <label for="fahrenheit"><input id="fahrenheit" name="degree" type="radio" value="Fahrenheit" required /> Fahrenheit</label>
+                <input type="submit" value="Update" class="btn btn-default"/>
+            </form>
+            </div>
         {% else %}
             <p>No favorite</p>
         {% endif %}

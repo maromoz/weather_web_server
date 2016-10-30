@@ -25,5 +25,7 @@ urlpatterns = [
     url(r'^get_favorite/', views.get_favorite),
     url(r'^add_city_to_favorite/', views.add_city_to_favorite),
     url(r'^remove_city_from_favorite/', views.remove_city_from_favorite),
+    url(r'^degree_system/', views.degree_system),
+
 ]
 
