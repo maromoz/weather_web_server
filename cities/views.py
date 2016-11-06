@@ -48,15 +48,20 @@ def get_city_temp(request):
     if len(city_list) == 0:
         return HttpResponse("Oops, the city you have asked is not available")
     for item in city_list:
-        city_name = item.name
         city_temperature = item.temperature
-        city_humidity = item.humidity
-        city_pressure = item.pressure
-        last_updated = item.last_updated
+        if city_temperature >= 0 and city_temperature<=9:
+            image = "../static/images/cloud-37011_640.png"
+        elif city_temperature >= 10 and city_temperature<= 19:
+            image = "../static/images/weather-157114_640.png"
+        elif city_temperature >= 20:
+            image = "../static/images/sun-159392_640.png"
+
+
    # temp_response = "The temperature in %s is %s%s" % (name, city_temperature, celsius_str)
     template = loader.get_template('city_weather.html')
     context = Context({
         'city': city_list,
+        "weather": {'image': image}
     })
     return HttpResponse(template.render(context))
 

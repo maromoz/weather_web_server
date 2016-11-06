@@ -28,7 +28,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <h1>Your city weather stats</h1>
                     <div class="main-grid1">
                         <div class="main-grid1-pos">
-                            <span> </span>
+                            <span> <img src={{ weather.image }} alt="" class="img-responsive" /> </span>
                         </div>
                         <h2>{{ c.temperature|floatformat:"0" }}<sup class="degree">°</sup><span>C</span></h2>
                         <p>{{c.name}}</p>
@@ -43,11 +43,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </div>
                     <div class="main-grid2">
                         <div class="main-grid2-left">
-                            <img src="/home/marom/marom/images/cloudy.png" alt=" " class="img-responsive" />
                             <p>Humidity <span>{{c.humidity|floatformat:"0"}}</span></p>
                         </div>
                         <div class="main-grid2-left">
-                            <img src="images/cloudy.png" alt=" " class="img-responsive" />
                             <p>Pressure <span>{{c.pressure|floatformat:"0"}}</span></p>
                         </div>
                         <div class="clear"> </div>
