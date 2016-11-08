@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6282e4da-b0d0-46b9-927c-8325e0c26574" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cities/static/css/get_city_temp.css" afterPath="$PROJECT_DIR$/cities/static/css/get_city_temp.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cities/templates/get_city_temp.html" afterPath="$PROJECT_DIR$/cities/templates/get_city_temp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cities/views.py" afterPath="$PROJECT_DIR$/cities/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cities/templates/city_weather.html" afterPath="$PROJECT_DIR$/cities/templates/city_weather.html" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,10 +64,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="get_city_temp.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="city_weather.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cities/templates/city_weather.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get_city_temp.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cities/templates/get_city_temp.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
+            <state relative-caret-position="396">
               <caret line="22" column="91" selection-start-line="22" selection-start-column="91" selection-end-line="22" selection-end-column="91" />
               <folding />
             </state>
@@ -128,10 +136,10 @@
         <option value="$PROJECT_DIR$/cities/templates/get_favorite.html" />
         <option value="$PROJECT_DIR$/weather/urls.py" />
         <option value="$PROJECT_DIR$/cities/static/css/city_weather.css" />
-        <option value="$PROJECT_DIR$/cities/templates/city_weather.html" />
         <option value="$PROJECT_DIR$/cities/views.py" />
         <option value="$PROJECT_DIR$/cities/static/css/get_city_temp.css" />
         <option value="$PROJECT_DIR$/cities/templates/get_city_temp.html" />
+        <option value="$PROJECT_DIR$/cities/templates/city_weather.html" />
       </list>
     </option>
   </component>
@@ -691,7 +699,14 @@
       <option name="project" value="LOCAL" />
       <updated>1478440707003</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="New widget to get_city_temp functions">
+      <created>1478602615915</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1478602615915</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView">
@@ -765,7 +780,8 @@
     <MESSAGE value="putting celsius sign in temp functions" />
     <MESSAGE value="Creating radio buttons in get favorite function" />
     <MESSAGE value="New city weather widget" />
-    <option name="LAST_COMMIT_MESSAGE" value="New city weather widget" />
+    <MESSAGE value="New widget to get_city_temp functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="New widget to get_city_temp functions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1117,14 +1133,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cities/templates/city_weather.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cities/static/css/city_weather.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -1162,8 +1170,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cities/templates/get_city_temp.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
+        <state relative-caret-position="396">
           <caret line="22" column="91" selection-start-line="22" selection-start-column="91" selection-end-line="22" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cities/templates/city_weather.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
