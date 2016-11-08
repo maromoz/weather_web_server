@@ -57,7 +57,6 @@ def get_city_temp(request):
             image = "../static/images/sun-159392_640.png"
 
 
-   # temp_response = "The temperature in %s is %s%s" % (name, city_temperature, celsius_str)
     template = loader.get_template('city_weather.html')
     context = Context({
         'city': city_list,
