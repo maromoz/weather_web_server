@@ -13,11 +13,19 @@
         <link rel="stylesheet" href="{% static 'css/add_city_to_favorite.css' %}">
     </head>
     <body>
-        <div class="container">
-            <span class="input-group-addon" id="basic-addon1">Enter a city name in order to insert it to the favorite list
+	<div class="row">
+		<h2 style="text-align: center">Add city to your favorite list</h2>
+	</div>
+    <div class="row">
+        <div class="col-sm-offset-4 col-sm-4">
             <form action="." method="get">
-                <input type="text" name="add" class="form-control" placeholder="City" aria-describedby="basic-addon1">
-                <input type="submit" value="Enter" class="btn btn-default"/>
+				<div class="form-group">
+					<div class="input-group">
+						<input type="text" class="form-control"  placeholder="City name" type="submit"  name="add">
+						<span class="input-group-addon danger" ><button class="btn btn-success" > Add
+		 </button></span>
+					</div>
+				</div>
             </form>
             </span>
         </div>

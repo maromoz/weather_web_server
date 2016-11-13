@@ -59,7 +59,7 @@ def get_city_temp(request):
 
     template = loader.get_template('city_weather.html')
     context = Context({
-        'city': city_list,
+        'c': city_list[0],
         "weather": {'image': image}
     })
     return HttpResponse(template.render(context))
