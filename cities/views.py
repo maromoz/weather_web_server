@@ -66,19 +66,34 @@ def get_city_temp(request):
 
 
 def get_favorite(request):
-    print request.GET
     favorite_list = Favorite.objects.all()
-    response = ""
-    for item in favorite_list:
-        favorite_name = item.name
-        city_temperature = item.temperature
-        response += "%s - %s" % (favorite_name, city_temperature)
+    city_list = []
+    image_list = []
+    #response = ""
+    for favorite in favorite_list:
+        filtered_cities = Cities.objects.filter(id=favorite.city_id)
+        if len(filtered_cities) == 0:
+            print "Warning: no cities found for id %d " % favorite.city_id
+        if len(filtered_cities) > 1:
+            print "Warning: more than 1 city found for id %d, using the first city" % favorite.city_id
+        city_temperature = filtered_cities[0].temperature
+        if city_temperature >= 0 and city_temperature<=9:
+            image = "../static/images/cloud-37011_640.png"
+        elif city_temperature >= 10 and city_temperature<= 19:
+            image = "../static/images/weather-157114_640.png"
+        elif city_temperature >= 20:
+            image = "../static/images/sun-159392_640.png"
+        else:
+            image = "../static/images/cloud-37011_640.png"
+        filtered_cities[0].image = image
+        city_list.append(filtered_cities[0])
+    #response += "%s - %s" % (city_name, city_temperature)
 
     degree = "℃"
     template = loader.get_template('get_favorite.html')
     context = Context({
-        'favorite': favorite_list,
-        "stuff": {'degree': degree}
+        'favorite_list': city_list,
+        "stuff": {'degree': degree},
     })
     return HttpResponse(template.render(context))
 
@@ -97,11 +112,12 @@ def add_city_to_favorite(request):
     city_list = Cities.objects.filter(name=name)
     if len(city_list) == 0:
         return HttpResponse("The city does not exists please choose a different city from the cities list")
-    favorite_list = Favorite.objects.filter(name=name)
+    for item in city_list:
+        city_list_id = item.id
+    favorite_list = Favorite.objects.filter(city_id=city_list_id)
     if len(favorite_list) >= 1:
         return HttpResponse("The city already exists in the favorite list")
-    city_temperature = city_list[0].temperature
-    f = Favorite(name=name, temperature=city_temperature)
+    f = Favorite(city_id=city_list_id)
     f.save()
     return HttpResponse("The city was added to your favorite list (:")
 
@@ -117,7 +133,10 @@ def remove_city_from_favorite(request):
         return HttpResponse(response)
 
     name = request.GET.get('remove')
-    favorite_list = Favorite.objects.filter(name=name)
+    city_list = Cities.objects.filter(name=name)
+    for item in city_list:
+        city_list_id = item.id
+    favorite_list = Favorite.objects.filter(city_id=city_list_id)
     if len(favorite_list) == 0:
         return HttpResponse("The city does not exists in the favorite list")
     favorite_list.delete()

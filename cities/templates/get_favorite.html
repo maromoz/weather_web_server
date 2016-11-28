@@ -1,34 +1,66 @@
 {% load staticfiles %}
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="{% static 'css/get_favorite.css' %}">
-    </head>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<title>Sunlight Weather Widget Flat Responsive Widget Template :: w3layouts</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Sunlight Weather Widget Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="{% static 'css/get_favorite.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href='//fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+</head>
     <body>
-        <div class="container">
-        {% if favorite %}
-            {% for f in favorite %}
-                <div class="row">
-                    <div class="col-md-4 col-md-offset-2">{{ f.name }}</div>
-                    <div class="col-md-4">{{ f.temperature|floatformat:"0" }}{{ stuff.degree }}</div>
-                </div>
-            {% endfor %}
-        </div>
-            <div class="myradio">
-<div class="myradio">
+<div class="my_radio">
     <form action="." method="get">
-    <label for="celsius"><input id="celsius" name="degree" type="radio"  value="Celsius" required /> Celsius</label>
-            <label for="fahrenheit"><input id="fahrenheit" name="degree" type="radio" value="Fahrenheit" required /> Fahrenheit</label>
+    <label for="celsius">
+        <input id="celsius" name="degree" type="radio"  value="Celsius"  /> Celsius</label>
+            <label for="fahrenheit">
+                <input id="fahrenheit" name="degree" type="radio" value="Fahrenheit"  /> Fahrenheit</label>
                 <input type="submit" value="Update" class="btn btn-default"/>
             </form>
             </div>
+        <div class="container">
+        {% if favorite_list %}
+            <h1>Your city weather stats</h1>
+            {% for f in favorite_list %}
+                 <div class="main">
+                      <div class="main-grid1">
+                        <div class="main-grid1-pos">
+                            <span> <img src={{ f.image }} alt="" class="img-responsive" /> </span>
+                        </div>
+                            <h2>{{ f.temperature|floatformat:"0" }}<sup class="degree">°</sup><span>C</span></h2>
+                        <p>{{f.name}}</p>
+                        <div class="main-grid1-grids">
+                            <div class="main-grid1-grid-left">
+                            </div>
+                            <div class="main-grid1-grid-right">
+                                <p><span></span>{{f.last_updated}}</p>
+                            </div>
+                            <div class="clear"> </div>
+                        </div>
+                    </div>
+                    <div class="main-grid2">
+                        <div class="main-grid2-left">
+                            <p>Humidity <span>{{f.humidity|floatformat:"0"}}</span></p>
+                        </div>
+                        <div class="main-grid2-left">
+                            <p>Pressure <span>{{f.pressure|floatformat:"0"}}</span></p>
+                        </div>
+                        <div class="clear"> </div>
+                    </div>
+                    <div class="footer">
+
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
         {% else %}
             <p>No favorite</p>
         {% endif %}

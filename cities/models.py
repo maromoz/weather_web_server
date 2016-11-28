@@ -156,8 +156,8 @@ class DjangoSession(models.Model):
 
 
 class Favorite(models.Model):
-    name = models.CharField(unique=True, max_length=255, blank=True, null=True)
-    temperature = models.FloatField(blank=True, null=True)
+    city_id = models.Field()
+
 
 
     class Meta:

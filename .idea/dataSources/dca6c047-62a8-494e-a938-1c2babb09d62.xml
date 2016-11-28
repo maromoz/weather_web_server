@@ -474,70 +474,68 @@ model</columns>
       <data-type>int(11)|0</data-type>
       <sequence-identity>1</sequence-identity>
     </column>
-    <column id="125" parent="20" name="name">
-      <data-type>varchar(255)|0</data-type>
+    <column id="125" parent="20" name="city_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
     </column>
-    <column id="126" parent="20" name="temperature">
-      <data-type>float|0</data-type>
-    </column>
-    <index id="127" parent="20" name="name_UNIQUE">
-      <columns>name</columns>
+    <index id="126" parent="20" name="name_UNIQUE">
+      <columns>city_id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="128" parent="20" name="PRIMARY">
+    <key id="127" parent="20" name="PRIMARY">
       <columns>id</columns>
       <primary>1</primary>
     </key>
-    <key id="129" parent="20" name="name_UNIQUE">
-      <columns>name</columns>
+    <key id="128" parent="20" name="name_UNIQUE">
+      <columns>city_id</columns>
       <underlying-index>name_UNIQUE</underlying-index>
     </key>
-    <column id="130" parent="21" name="id">
+    <column id="129" parent="21" name="id">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
       <sequence-identity>1</sequence-identity>
     </column>
-    <column id="131" parent="21" name="choice_text">
+    <column id="130" parent="21" name="choice_text">
       <mandatory>1</mandatory>
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="132" parent="21" name="votes">
+    <column id="131" parent="21" name="votes">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
     </column>
-    <column id="133" parent="21" name="question_id">
+    <column id="132" parent="21" name="question_id">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
     </column>
-    <index id="134" parent="21" name="polls_choice_7aa0f6ee">
+    <index id="133" parent="21" name="polls_choice_7aa0f6ee">
       <columns>question_id</columns>
       <desc-columns></desc-columns>
     </index>
-    <key id="135" parent="21" name="PRIMARY">
+    <key id="134" parent="21" name="PRIMARY">
       <columns>id</columns>
       <primary>1</primary>
     </key>
-    <foreign-key id="136" parent="21" name="polls_choice_question_id_c5b4b260_fk_polls_question_id">
+    <foreign-key id="135" parent="21" name="polls_choice_question_id_c5b4b260_fk_polls_question_id">
       <columns>question_id</columns>
       <ref-key>~.polls_question.PRIMARY</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <column id="137" parent="22" name="id">
+    <column id="136" parent="22" name="id">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
       <sequence-identity>1</sequence-identity>
     </column>
-    <column id="138" parent="22" name="question_text">
+    <column id="137" parent="22" name="question_text">
       <mandatory>1</mandatory>
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="139" parent="22" name="pub_date">
+    <column id="138" parent="22" name="pub_date">
       <mandatory>1</mandatory>
       <data-type>datetime(6)|0</data-type>
     </column>
-    <key id="140" parent="22" name="PRIMARY">
+    <key id="139" parent="22" name="PRIMARY">
       <columns>id</columns>
       <primary>1</primary>
     </key>
