@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6282e4da-b0d0-46b9-927c-8325e0c26574" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/dca6c047-62a8-494e-a938-1c2babb09d62.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/dca6c047-62a8-494e-a938-1c2babb09d62.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cities/models.py" afterPath="$PROJECT_DIR$/cities/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cities/static/css/get_favorite.css" afterPath="$PROJECT_DIR$/cities/static/css/get_favorite.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cities/templates/get_favorite.html" afterPath="$PROJECT_DIR$/cities/templates/get_favorite.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cities/views.py" afterPath="$PROJECT_DIR$/cities/views.py" />
@@ -37,32 +35,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cities/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+            <state relative-caret-position="396">
+              <caret line="92" column="17" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
               <folding>
                 <element signature="e#24#51#0" expanded="true" />
-                <marker date="1480328382507" expanded="true" signature="5193:5216" ph="SELECT name cities" />
-                <marker date="1480328382507" expanded="true" signature="5651:5712" ph="SELECT citie... cities" />
-                <marker date="1480328382507" expanded="true" signature="5916:5941" ph="SELECT name favorite" />
-                <marker date="1480328382507" expanded="true" signature="6060:6125" ph="SELECT name,... cities" />
-                <marker date="1480328382507" expanded="true" signature="6450:6495" ph="SELECT count... cities" />
-                <marker date="1480328382507" expanded="true" signature="6760:6807" ph="SELECT count... favorite" />
-                <marker date="1480328382507" expanded="true" signature="7052:7102" ph="INSERT INTO favorite... " />
-                <marker date="1480328382507" expanded="true" signature="7419:7466" ph="SELECT count... favorite" />
-                <marker date="1480328382507" expanded="true" signature="7733:7771" ph="DELETE FROM " />
+                <marker date="1480416175388" expanded="true" signature="5309:5332" ph="SELECT name cities" />
+                <marker date="1480416175388" expanded="true" signature="5767:5828" ph="SELECT citie... cities" />
+                <marker date="1480416175388" expanded="true" signature="6032:6057" ph="SELECT name favorite" />
+                <marker date="1480416175388" expanded="true" signature="6176:6241" ph="SELECT name,... cities" />
+                <marker date="1480416175388" expanded="true" signature="6566:6611" ph="SELECT count... cities" />
+                <marker date="1480416175388" expanded="true" signature="6876:6923" ph="SELECT count... favorite" />
+                <marker date="1480416175388" expanded="true" signature="7168:7218" ph="INSERT INTO favorite... " />
+                <marker date="1480416175388" expanded="true" signature="7535:7582" ph="SELECT count... favorite" />
+                <marker date="1480416175388" expanded="true" signature="7849:7887" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="get_favorite.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="get_favorite.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cities/templates/get_favorite.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="571">
+              <caret line="37" column="96" selection-start-line="37" selection-start-column="96" selection-end-line="37" selection-end-column="96" />
               <folding />
             </state>
           </provider>
@@ -71,8 +69,8 @@
       <file leaf-file-name="get_favorite.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cities/static/css/get_favorite.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+            <state relative-caret-position="4194">
+              <caret line="233" column="18" selection-start-line="233" selection-start-column="18" selection-end-line="233" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -152,8 +150,8 @@
         <option value="$PROJECT_DIR$/cities/templates/remove_city_from_favorite.html" />
         <option value="$PROJECT_DIR$/cities/models.py" />
         <option value="$PROJECT_DIR$/cities/views.py" />
-        <option value="$PROJECT_DIR$/cities/static/css/get_favorite.css" />
         <option value="$PROJECT_DIR$/cities/templates/get_favorite.html" />
+        <option value="$PROJECT_DIR$/cities/static/css/get_favorite.css" />
       </list>
     </option>
   </component>
@@ -222,6 +220,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -332,7 +331,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -741,7 +739,14 @@
       <option name="project" value="LOCAL" />
       <updated>1479039159392</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="favorite cities function working">
+      <created>1480340582873</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1480340582873</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView">
@@ -757,7 +762,7 @@
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2642344" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26755112" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.48258707" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5262576" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946378" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -817,7 +822,8 @@
     <MESSAGE value="New city weather widget" />
     <MESSAGE value="New widget to get_city_temp functions" />
     <MESSAGE value="New widget to add/remove city functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="New widget to add/remove city functions" />
+    <MESSAGE value="favorite cities function working" />
+    <option name="LAST_COMMIT_MESSAGE" value="favorite cities function working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -877,7 +883,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="11" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -887,15 +892,15 @@
           <caret line="56" column="15" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="15" />
           <folding>
             <element signature="e#24#51#0" expanded="true" />
-            <marker date="1480328382507" expanded="true" signature="5193:5216" ph="SELECT name cities" />
-            <marker date="1480328382507" expanded="true" signature="5651:5712" ph="SELECT citie... cities" />
-            <marker date="1480328382507" expanded="true" signature="5916:5941" ph="SELECT name favorite" />
-            <marker date="1480328382507" expanded="true" signature="6060:6125" ph="SELECT name,... cities" />
-            <marker date="1480328382507" expanded="true" signature="6450:6495" ph="SELECT count... cities" />
-            <marker date="1480328382507" expanded="true" signature="6760:6807" ph="SELECT count... favorite" />
-            <marker date="1480328382507" expanded="true" signature="7052:7102" ph="INSERT INTO favorite... " />
-            <marker date="1480328382507" expanded="true" signature="7419:7466" ph="SELECT count... favorite" />
-            <marker date="1480328382507" expanded="true" signature="7733:7771" ph="DELETE FROM " />
+            <marker date="1480416175388" expanded="true" signature="5309:5332" ph="SELECT name cities" />
+            <marker date="1480416175388" expanded="true" signature="5767:5828" ph="SELECT citie... cities" />
+            <marker date="1480416175388" expanded="true" signature="6032:6057" ph="SELECT name favorite" />
+            <marker date="1480416175388" expanded="true" signature="6176:6241" ph="SELECT name,... cities" />
+            <marker date="1480416175388" expanded="true" signature="6566:6611" ph="SELECT count... cities" />
+            <marker date="1480416175388" expanded="true" signature="6876:6923" ph="SELECT count... favorite" />
+            <marker date="1480416175388" expanded="true" signature="7168:7218" ph="INSERT INTO favorite... " />
+            <marker date="1480416175388" expanded="true" signature="7535:7582" ph="SELECT count... favorite" />
+            <marker date="1480416175388" expanded="true" signature="7849:7887" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -922,7 +927,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -930,7 +934,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="106" selection-start-line="16" selection-start-column="106" selection-end-line="16" selection-end-column="106" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -938,7 +941,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -964,15 +966,15 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#24#51#0" expanded="true" />
-            <marker date="1480328382507" expanded="true" signature="5193:5216" ph="SELECT name cities" />
-            <marker date="1480328382507" expanded="true" signature="5651:5712" ph="SELECT citie... cities" />
-            <marker date="1480328382507" expanded="true" signature="5916:5941" ph="SELECT name favorite" />
-            <marker date="1480328382507" expanded="true" signature="6060:6125" ph="SELECT name,... cities" />
-            <marker date="1480328382507" expanded="true" signature="6450:6495" ph="SELECT count... cities" />
-            <marker date="1480328382507" expanded="true" signature="6760:6807" ph="SELECT count... favorite" />
-            <marker date="1480328382507" expanded="true" signature="7052:7102" ph="INSERT INTO favorite... " />
-            <marker date="1480328382507" expanded="true" signature="7419:7466" ph="SELECT count... favorite" />
-            <marker date="1480328382507" expanded="true" signature="7733:7771" ph="DELETE FROM " />
+            <marker date="1480416175388" expanded="true" signature="5309:5332" ph="SELECT name cities" />
+            <marker date="1480416175388" expanded="true" signature="5767:5828" ph="SELECT citie... cities" />
+            <marker date="1480416175388" expanded="true" signature="6032:6057" ph="SELECT name favorite" />
+            <marker date="1480416175388" expanded="true" signature="6176:6241" ph="SELECT name,... cities" />
+            <marker date="1480416175388" expanded="true" signature="6566:6611" ph="SELECT count... cities" />
+            <marker date="1480416175388" expanded="true" signature="6876:6923" ph="SELECT count... favorite" />
+            <marker date="1480416175388" expanded="true" signature="7168:7218" ph="INSERT INTO favorite... " />
+            <marker date="1480416175388" expanded="true" signature="7535:7582" ph="SELECT count... favorite" />
+            <marker date="1480416175388" expanded="true" signature="7849:7887" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -1070,7 +1072,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="11" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1114,7 +1115,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="36" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="49" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1122,7 +1122,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="882">
           <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1130,7 +1129,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
           <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1138,7 +1136,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1146,7 +1143,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="23" column="114" selection-start-line="23" selection-start-column="89" selection-end-line="23" selection-end-column="114" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1188,38 +1184,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cities/views.py">
+    <entry file="file://$PROJECT_DIR$/cities/templates/get_favorite.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#51#0" expanded="true" />
-            <marker date="1480328382507" expanded="true" signature="5193:5216" ph="SELECT name cities" />
-            <marker date="1480328382507" expanded="true" signature="5651:5712" ph="SELECT citie... cities" />
-            <marker date="1480328382507" expanded="true" signature="5916:5941" ph="SELECT name favorite" />
-            <marker date="1480328382507" expanded="true" signature="6060:6125" ph="SELECT name,... cities" />
-            <marker date="1480328382507" expanded="true" signature="6450:6495" ph="SELECT count... cities" />
-            <marker date="1480328382507" expanded="true" signature="6760:6807" ph="SELECT count... favorite" />
-            <marker date="1480328382507" expanded="true" signature="7052:7102" ph="INSERT INTO favorite... " />
-            <marker date="1480328382507" expanded="true" signature="7419:7466" ph="SELECT count... favorite" />
-            <marker date="1480328382507" expanded="true" signature="7733:7771" ph="DELETE FROM " />
-          </folding>
+        <state relative-caret-position="571">
+          <caret line="37" column="96" selection-start-line="37" selection-start-column="96" selection-end-line="37" selection-end-column="96" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cities/static/css/get_favorite.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+        <state relative-caret-position="4194">
+          <caret line="233" column="18" selection-start-line="233" selection-start-column="18" selection-end-line="233" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cities/templates/get_favorite.html">
+    <entry file="file://$PROJECT_DIR$/cities/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="396">
+          <caret line="92" column="17" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
+          <folding>
+            <element signature="e#24#51#0" expanded="true" />
+            <marker date="1480416175388" expanded="true" signature="5309:5332" ph="SELECT name cities" />
+            <marker date="1480416175388" expanded="true" signature="5767:5828" ph="SELECT citie... cities" />
+            <marker date="1480416175388" expanded="true" signature="6032:6057" ph="SELECT name favorite" />
+            <marker date="1480416175388" expanded="true" signature="6176:6241" ph="SELECT name,... cities" />
+            <marker date="1480416175388" expanded="true" signature="6566:6611" ph="SELECT count... cities" />
+            <marker date="1480416175388" expanded="true" signature="6876:6923" ph="SELECT count... favorite" />
+            <marker date="1480416175388" expanded="true" signature="7168:7218" ph="INSERT INTO favorite... " />
+            <marker date="1480416175388" expanded="true" signature="7535:7582" ph="SELECT count... favorite" />
+            <marker date="1480416175388" expanded="true" signature="7849:7887" ph="DELETE FROM " />
+          </folding>
         </state>
       </provider>
     </entry>

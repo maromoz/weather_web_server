@@ -49,13 +49,12 @@ def get_city_temp(request):
         return HttpResponse("Oops, the city you have asked is not available")
     for item in city_list:
         city_temperature = item.temperature
-        if city_temperature >= 0 and city_temperature<=9:
+        if city_temperature >= 0 and city_temperature <= 9:
             image = "../static/images/cloud-37011_640.png"
-        elif city_temperature >= 10 and city_temperature<= 19:
+        elif city_temperature >= 10 and city_temperature <= 19:
             image = "../static/images/weather-157114_640.png"
         elif city_temperature >= 20:
             image = "../static/images/sun-159392_640.png"
-
 
     template = loader.get_template('city_weather.html')
     context = Context({
@@ -68,8 +67,7 @@ def get_city_temp(request):
 def get_favorite(request):
     favorite_list = Favorite.objects.all()
     city_list = []
-    image_list = []
-    #response = ""
+    degree_system = request.GET.get('degree')
     for favorite in favorite_list:
         filtered_cities = Cities.objects.filter(id=favorite.city_id)
         if len(filtered_cities) == 0:
@@ -77,9 +75,9 @@ def get_favorite(request):
         if len(filtered_cities) > 1:
             print "Warning: more than 1 city found for id %d, using the first city" % favorite.city_id
         city_temperature = filtered_cities[0].temperature
-        if city_temperature >= 0 and city_temperature<=9:
+        if city_temperature <= 9:
             image = "../static/images/cloud-37011_640.png"
-        elif city_temperature >= 10 and city_temperature<= 19:
+        elif city_temperature >= 10 and city_temperature <= 19:
             image = "../static/images/weather-157114_640.png"
         elif city_temperature >= 20:
             image = "../static/images/sun-159392_640.png"
@@ -87,9 +85,12 @@ def get_favorite(request):
             image = "../static/images/cloud-37011_640.png"
         filtered_cities[0].image = image
         city_list.append(filtered_cities[0])
-    #response += "%s - %s" % (city_name, city_temperature)
+        if degree_system == "Fahrenheit":
+            filtered_cities[0].temperature = filtered_cities[0].temperature * 1.8 + 32
 
     degree = "℃"
+    if degree_system == "Fahrenheit":
+        degree = "°F"
     template = loader.get_template('get_favorite.html')
     context = Context({
         'favorite_list': city_list,
