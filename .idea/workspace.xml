@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6282e4da-b0d0-46b9-927c-8325e0c26574" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cities/static/css/get_favorite.css" afterPath="$PROJECT_DIR$/cities/static/css/get_favorite.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cities/templates/get_favorite.html" afterPath="$PROJECT_DIR$/cities/templates/get_favorite.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cities/views.py" afterPath="$PROJECT_DIR$/cities/views.py" />
-    </list>
+    <list default="true" id="6282e4da-b0d0-46b9-927c-8325e0c26574" name="Default" comment="" />
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -746,7 +741,14 @@
       <option name="project" value="LOCAL" />
       <updated>1480340582873</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Fahrenhiet/Celsius radio buttons and actual degrees working">
+      <created>1480417448136</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1480417448136</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView">
@@ -823,7 +825,8 @@
     <MESSAGE value="New widget to get_city_temp functions" />
     <MESSAGE value="New widget to add/remove city functions" />
     <MESSAGE value="favorite cities function working" />
-    <option name="LAST_COMMIT_MESSAGE" value="favorite cities function working" />
+    <MESSAGE value="Fahrenhiet/Celsius radio buttons and actual degrees working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fahrenhiet/Celsius radio buttons and actual degrees working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
