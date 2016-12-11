@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+import urllib
+import urllib2
+import json
 from audioop import reverse
 
 from django.http import HttpResponseRedirect
@@ -55,11 +58,19 @@ def get_city_temp(request):
             image = "../static/images/weather-157114_640.png"
         elif city_temperature >= 20:
             image = "../static/images/sun-159392_640.png"
+        url = 'https://maps.googleapis.com/maps/api/geocode/json?address='+name+'&key=AIzaSyDeJsN1m7f1gmun0G3NZedinAaAJLBwZkE'
+        weather = urllib2.urlopen(url)
+        wjson = weather.read()
+        wjdata = json.loads(wjson)
+        lat = wjdata['results'][0]['geometry']['location']['lat']
+        lng = wjdata['results'][0]['geometry']['location']['lng']
+        print lat,lng
 
     template = loader.get_template('city_weather.html')
     context = Context({
         'c': city_list[0],
-        "weather": {'image': image}
+        "weather": {'image': image},
+        "geocoding": {'lat': lat, 'lng': lng},
     })
     return HttpResponse(template.render(context))
 
