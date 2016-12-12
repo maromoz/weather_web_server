@@ -49,32 +49,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </div>
                 </div>
     {% endif %}
-    <style>
-      #map {
-            margin-left: auto;
-            margin-right: auto;
-            height: 240px;
-            width: 15%;
-       }
-    </style>
-    <h3>My Google Maps Demo</h3>
-    <div id="map"></div>
-    <script>
-      function initMap() {
-        var uluru = {lat: {{ geocoding.lat }}, lng: {{ geocoding.lng }}};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeJsN1m7f1gmun0G3NZedinAaAJLBwZkE&callback=initMap">
-    </script>
+    {% include 'google_map.html' %}
+
 
 </body>
 </html>
