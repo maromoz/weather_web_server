@@ -76,6 +76,7 @@ def get_city_temp(request):
 
 
 def get_favorite(request):
+    add_city_to_favorite(request)
     favorite_list = Favorite.objects.all()
     city_list = []
     degree_system = request.GET.get('degree')

@@ -233,3 +233,7 @@ h1{
 	font-size: 2em;
 	color:#FFD61C;
 }
+
+.row {
+	text-align: center;
+}

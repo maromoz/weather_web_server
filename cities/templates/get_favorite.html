@@ -29,6 +29,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="container">
         {% if favorite_list %}
             <h1>Your city weather stats</h1>
+            <div class="row">
+        <div class="col-sm-offset-4 col-sm-4">
+            <form action="." method="get">
+				<div class="form-group">
+					<div class="input-group">
+						<input type="text" class="form-control"  placeholder="City name" type="submit"  name="add">
+						<span class="input-group-addon danger" ><button class="btn btn-success" > Add
+		 </button></span>
+					</div>
+				</div>
             {% for f in favorite_list %}
                  <div class="main">
                       <div class="main-grid1">
