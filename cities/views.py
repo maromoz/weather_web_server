@@ -3,6 +3,7 @@ import urllib
 import urllib2
 import json
 from audioop import reverse
+from django.views.decorators.csrf import csrf_exempt
 
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, render_to_response, redirect
@@ -74,7 +75,7 @@ def get_city_temp(request):
     })
     return HttpResponse(template.render(context))
 
-
+@csrf_exempt
 def get_favorite(request):
     add_city_to_favorite(request)
     favorite_list = Favorite.objects.all()
@@ -154,6 +155,14 @@ def remove_city_from_favorite(request):
         return HttpResponse("The city does not exists in the favorite list")
     favorite_list.delete()
     return HttpResponse("The city was removed from your favorite list (:")
+
+
+@csrf_exempt
+def delete_id_from_db(request):
+    print "hello"
+    f = Favorite.objects.filter(city_id=request.POST.get('id'))
+    f.delete()
+    return HttpResponse()
 
 
 #############################################OLD############################################

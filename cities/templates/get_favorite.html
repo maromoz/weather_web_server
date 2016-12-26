@@ -40,8 +40,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 				</div>
             {% for f in favorite_list %}
-                 <div class="main">
+                 <div class="main" id={{ f.id }}>
                       <div class="main-grid1">
+                          <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+                          <button class="close">&#10006;</button>
+                          <script src="{% static 'js/delete_from_db.js' %}"></script>
                         <div class="main-grid1-pos">
                             <span> <img src={{ f.image }} alt="" class="img-responsive" /> </span>
                         </div>

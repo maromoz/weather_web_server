@@ -237,3 +237,8 @@ h1{
 .row {
 	text-align: center;
 }
+
+.close {
+	float: right;
+}
+
