@@ -3,6 +3,8 @@ import urllib
 import urllib2
 import json
 from audioop import reverse
+
+from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 
 from django.http import HttpResponseRedirect
@@ -77,7 +79,6 @@ def get_city_temp(request):
 
 @csrf_exempt
 def get_favorite(request):
-    add_city_to_favorite(request)
     favorite_list = Favorite.objects.all()
     city_list = []
     degree_system = request.GET.get('degree')
@@ -159,11 +160,53 @@ def remove_city_from_favorite(request):
 
 @csrf_exempt
 def delete_id_from_db(request):
-    print "hello"
-    f = Favorite.objects.filter(city_id=request.POST.get('id'))
-    f.delete()
+    favorite = Favorite.objects.filter(city_id=request.POST.get('id'))
+    favorite.delete()
     return HttpResponse()
 
+@csrf_exempt
+def get_auto_complete_cities(request):
+    start_of_city_name = request.GET.get('text')
+    possible_cities = Cities.objects.filter(name__istartswith=start_of_city_name)
+    possible_cities_names = []
+    for city in possible_cities:
+        possible_cities_names.append(city.name)
+
+    print(start_of_city_name, possible_cities_names)
+    return JsonResponse({'possible_cities':possible_cities_names})
+
+@csrf_exempt
+def add_id_to_db(request):
+    # write the new city to the favorite table
+    name_to_add = request.POST.get('city')
+    city_to_add = Cities.objects.get(name=name_to_add)
+    new_favorite = Favorite(city_id=city_to_add.id)
+    new_favorite.save()
+
+    #render html element for js
+    degree_system = request.GET.get('degree')
+    degree = "℃"
+    if degree_system == "Fahrenheit":
+        degree = "°F"
+        city_to_add.temperature = city_to_add.temperature * 1.8 + 32
+
+    city_temperature = city_to_add.temperature
+    if city_temperature <= 9:
+        image = "../static/images/cloud-37011_640.png"
+    elif city_temperature >= 10 and city_temperature <= 19:
+        image = "../static/images/weather-157114_640.png"
+    elif city_temperature >= 20:
+        image = "../static/images/sun-159392_640.png"
+    else:
+        image = "../static/images/cloud-37011_640.png"
+    city_to_add.image = image
+
+    n = 5
+    context = Context({
+        'favorite': city_to_add,
+        "stuff": {'degree': degree},
+    })
+    return render_to_response('single_city.html', context)
 
 #############################################OLD############################################
 

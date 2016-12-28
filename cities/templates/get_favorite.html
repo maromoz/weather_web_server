@@ -1,4 +1,9 @@
 {% load staticfiles %}
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="{% static 'js/ajax_requests.js' %}"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
 <!--suppress ALL -->
 <html lang="en">
 <head>
@@ -30,21 +35,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         {% if favorite_list %}
             <h1>Your city weather stats</h1>
             <div class="row">
-        <div class="col-sm-offset-4 col-sm-4">
-            <form action="." method="get">
-				<div class="form-group">
+        <div id="main_container" class="col-sm-offset-4 col-sm-4">
+				<div id="before_first_main" class="form-group">
 					<div class="input-group">
-						<input type="text" class="form-control"  placeholder="City name" type="submit"  name="add">
-						<span class="input-group-addon danger" ><button class="btn btn-success" > Add
+						<input type="text" id="add_to_db" class="form-control"  placeholder="City name">
+						<span class="input-group-addon danger" ><button id="add_button" class="add_button" > Add
 		 </button></span>
 					</div>
 				</div>
             {% for f in favorite_list %}
                  <div class="main" id={{ f.id }}>
                       <div class="main-grid1">
-                          <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-                          <button class="close">&#10006;</button>
-                          <script src="{% static 'js/delete_from_db.js' %}"></script>
+                          <button id="delete_from_db" class="close">&#10006;</button>
                         <div class="main-grid1-pos">
                             <span> <img src={{ f.image }} alt="" class="img-responsive" /> </span>
                         </div>

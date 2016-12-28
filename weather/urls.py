@@ -26,6 +26,8 @@ urlpatterns = [
     url(r'^add_city_to_favorite/', views.add_city_to_favorite),
     url(r'^remove_city_from_favorite/', views.remove_city_from_favorite),
     url(r'^delete_id_from_db/', views.delete_id_from_db),
+    url(r'^add_id_to_db/', views.add_id_to_db),
+    url(r'^get_auto_complete_cities/', views.get_auto_complete_cities),
 
 ]
 
