@@ -67,7 +67,6 @@ def get_city_temp(request):
         wjdata = json.loads(wjson)
         lat = wjdata['results'][0]['geometry']['location']['lat']
         lng = wjdata['results'][0]['geometry']['location']['lng']
-        print lat,lng
 
     template = loader.get_template('city_weather.html')
     context = Context({
@@ -172,7 +171,6 @@ def get_auto_complete_cities(request):
     for city in possible_cities:
         possible_cities_names.append(city.name)
 
-    print(start_of_city_name, possible_cities_names)
     return JsonResponse({'possible_cities':possible_cities_names})
 
 @csrf_exempt
@@ -201,7 +199,7 @@ def add_id_to_db(request):
         image = "../static/images/cloud-37011_640.png"
     city_to_add.image = image
 
-    n = 5
+
     context = Context({
         'favorite': city_to_add,
         "stuff": {'degree': degree},

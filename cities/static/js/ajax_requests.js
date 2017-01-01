@@ -1,5 +1,5 @@
-$(document).ready(function () {
-    $("#delete_from_db").click(function () {
+function armDeleteButtons(){
+    $(".delete_button").click(function () {
         var id = $(this).parents(".main").attr('id');
         $(this).parents(".main").remove();
         $.ajax({
@@ -10,6 +10,10 @@ $(document).ready(function () {
             }
         });
     });
+}
+
+$(document).ready(function () {
+    armDeleteButtons();
 
     $('#add_button').click(function () {
         var city = $('#add_to_db').val();
@@ -18,7 +22,8 @@ $(document).ready(function () {
             url: '/add_id_to_db/',
             data: {city: city},
             success: function (element_to_add) {
-                $("#before_first_main").after(element_to_add)
+                $("#before_first_main").after(element_to_add);
+                armDeleteButtons();
             }
         });
     });

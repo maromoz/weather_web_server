@@ -1,11 +1,13 @@
 <div class="main" id={{ favorite.id }}>
       <div class="main-grid1">
-          <button id="delete_from_db" class="close">&#10006;</button>
+          <button id="delete_from_db" class="close delete_button">&#10006;</button>
         <div class="main-grid1-pos">
             <span> <img src={{ favorite.image }} alt="" class="img-responsive" /> </span>
         </div>
+          <a href="http://localhost:8000/get_city_temp/?name={{ favorite.name }}" >
             <h2>{{ favorite.temperature|floatformat:"0" }}<sup class="degree">{{ stuff.degree }}</sup><span></span></h2>
-        <p>{{favorite.name}}</p>
+            <p>{{favorite.name}}</p>
+              </a>
         <div class="main-grid1-grids">
             <div class="main-grid1-grid-left">
             </div>

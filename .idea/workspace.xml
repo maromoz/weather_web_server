@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/cities/templates/single_city.html" line="26" />
+    <bookmark url="file://$PROJECT_DIR$/cities/templates/single_city.html" line="28" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6282e4da-b0d0-46b9-927c-8325e0c26574" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cities/static/js/delete_from_db.js" afterPath="$PROJECT_DIR$/cities/static/js/ajax_requests.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cities/static/js/ajax_requests.js" afterPath="$PROJECT_DIR$/cities/static/js/ajax_requests.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cities/templates/get_favorite.html" afterPath="$PROJECT_DIR$/cities/templates/get_favorite.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cities/urls.py" afterPath="$PROJECT_DIR$/cities/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cities/templates/google_map.html" afterPath="$PROJECT_DIR$/cities/templates/google_map.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cities/templates/single_city.html" afterPath="$PROJECT_DIR$/cities/templates/single_city.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cities/views.py" afterPath="$PROJECT_DIR$/cities/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weather/urls.py" afterPath="$PROJECT_DIR$/weather/urls.py" />
     </list>
@@ -43,22 +44,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cities/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="1286">
+              <caret line="86" column="17" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="17" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
-                <marker date="1482921544712" expanded="true" signature="7560:7583" ph="SELECT name cities" />
-                <marker date="1482921544712" expanded="true" signature="8018:8079" ph="SELECT citie... cities" />
-                <marker date="1482921544712" expanded="true" signature="8283:8308" ph="SELECT name favorite" />
-                <marker date="1482921544712" expanded="true" signature="8427:8492" ph="SELECT name,... cities" />
-                <marker date="1482921544712" expanded="true" signature="8817:8862" ph="SELECT count... cities" />
-                <marker date="1482921544712" expanded="true" signature="9127:9174" ph="SELECT count... favorite" />
-                <marker date="1482921544712" expanded="true" signature="9419:9469" ph="INSERT INTO favorite... " />
-                <marker date="1482921544712" expanded="true" signature="9786:9833" ph="SELECT count... favorite" />
-                <marker date="1482921544712" expanded="true" signature="10100:10138" ph="DELETE FROM " />
+                <marker date="1483266741872" expanded="true" signature="7476:7499" ph="SELECT name cities" />
+                <marker date="1483266741872" expanded="true" signature="7934:7995" ph="SELECT citie... cities" />
+                <marker date="1483266741872" expanded="true" signature="8199:8224" ph="SELECT name favorite" />
+                <marker date="1483266741872" expanded="true" signature="8343:8408" ph="SELECT name,... cities" />
+                <marker date="1483266741872" expanded="true" signature="8733:8778" ph="SELECT count... cities" />
+                <marker date="1483266741872" expanded="true" signature="9043:9090" ph="SELECT count... favorite" />
+                <marker date="1483266741872" expanded="true" signature="9335:9385" ph="INSERT INTO favorite... " />
+                <marker date="1483266741872" expanded="true" signature="9702:9749" ph="SELECT count... favorite" />
+                <marker date="1483266741872" expanded="true" signature="10016:10054" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -67,38 +68,30 @@
       <file leaf-file-name="get_favorite.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cities/templates/get_favorite.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+            <state relative-caret-position="18">
+              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+              <folding>
+                <element signature="e#2570#2578#1#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get_city_temp.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cities/templates/get_city_temp.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="549">
+              <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="response.py" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/lib/python2.7/dist-packages/django/template/response.py">
+      <file leaf-file-name="google_map.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cities/templates/google_map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="145" column="33" selection-start-line="145" selection-start-column="33" selection-end-line="145" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="response.py" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/lib/python2.7/dist-packages/django/http/response.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="exception.py" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="198">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -107,7 +100,7 @@
       <file leaf-file-name="get_favorite.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cities/static/css/get_favorite.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
+            <state relative-caret-position="4320">
               <caret line="240" column="8" selection-start-line="240" selection-start-column="8" selection-end-line="240" selection-end-column="8" />
               <folding />
             </state>
@@ -117,11 +110,9 @@
       <file leaf-file-name="single_city.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cities/templates/single_city.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#123#131#1#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="108">
+              <caret line="6" column="72" selection-start-line="6" selection-start-column="72" selection-end-line="6" selection-end-column="72" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -129,18 +120,18 @@
       <file leaf-file-name="ajax_requests.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cities/static/js/ajax_requests.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+            <state relative-caret-position="18">
+              <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/weather/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+            <state relative-caret-position="324">
+              <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -149,8 +140,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cities/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="12" column="78" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="78" />
+            <state relative-caret-position="54">
+              <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -197,7 +188,6 @@
         <option value="$PROJECT_DIR$/cities/models.py" />
         <option value="$PROJECT_DIR$/cities/static/javascript/google_map.js" />
         <option value="$PROJECT_DIR$/cities/static/js/google_map.js" />
-        <option value="$PROJECT_DIR$/cities/templates/google_map.html" />
         <option value="$PROJECT_DIR$/cities/static/css/get_favorite.css" />
         <option value="$PROJECT_DIR$/cities/templates/remove_button.html" />
         <option value="$PROJECT_DIR$/cities/templates/remove_button.js" />
@@ -208,12 +198,13 @@
         <option value="$PROJECT_DIR$/cities/static/js/csrf.js" />
         <option value="$PROJECT_DIR$/cities/static/js/add_to_db.js" />
         <option value="$PROJECT_DIR$/cities/static/js/delete_from_db.js" />
-        <option value="$PROJECT_DIR$/cities/templates/single_city.html" />
         <option value="$PROJECT_DIR$/cities/urls.py" />
-        <option value="$PROJECT_DIR$/weather/urls.py" />
-        <option value="$PROJECT_DIR$/cities/templates/get_favorite.html" />
-        <option value="$PROJECT_DIR$/cities/static/js/ajax_requests.js" />
         <option value="$PROJECT_DIR$/cities/views.py" />
+        <option value="$PROJECT_DIR$/cities/static/js/ajax_requests.js" />
+        <option value="$PROJECT_DIR$/cities/templates/get_favorite.html" />
+        <option value="$PROJECT_DIR$/cities/templates/single_city.html" />
+        <option value="$PROJECT_DIR$/cities/templates/google_map.html" />
+        <option value="$PROJECT_DIR$/weather/urls.py" />
       </list>
     </option>
   </component>
@@ -282,8 +273,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -877,7 +868,14 @@
       <option name="project" value="LOCAL" />
       <updated>1482758162612</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="adding and removing in get_favorite works with jquery + autocomplete to textbox">
+      <created>1482921700944</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1482921700944</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -913,11 +911,11 @@
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27363184" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37368712" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.48258707" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5262576" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946378" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32985386" sideWeight="0.4737424" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50835073" sideWeight="0.4737424" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.4870094" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.45826423" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1002,7 +1000,8 @@
     <MESSAGE value="Google maps at get_city_temp is working, showing the chosen city in the map , the javascript code is imported from another template" />
     <MESSAGE value="add city to favorite function passed to the get favorite function, now adding city to the favorite is possible directly from the get_favorite page" />
     <MESSAGE value="using jquery to delete id from the mysql db is now working without needing to refresh the page" />
-    <option name="LAST_COMMIT_MESSAGE" value="using jquery to delete id from the mysql db is now working without needing to refresh the page" />
+    <MESSAGE value="adding and removing in get_favorite works with jquery + autocomplete to textbox" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding and removing in get_favorite works with jquery + autocomplete to textbox" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1110,22 +1109,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cities/templates/get_city_temp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/87d1c1d4/dca6c047-62a8-494e-a938-1c2babb09d62/weather.favorite">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1179,13 +1171,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cities/templates/google_map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cities/templates/remove_button.html" />
     <entry file="file://$PROJECT_DIR$/cities/templates/remove_button.js" />
     <entry file="file://$PROJECT_DIR$/cities/static/js/rango-jquery.js" />
@@ -1193,7 +1178,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="158" column="21" selection-start-line="158" selection-start-column="21" selection-end-line="158" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1205,19 +1189,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cities/static/js/csrf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cities/static/js/csrf.js" />
     <entry file="file://$PROJECT_DIR$/cities/templates/remove_city_from_favorite.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="369">
           <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1225,23 +1201,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="387">
           <caret line="51" column="4" selection-start-line="51" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cities/static/js/add_to_db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cities/static/js/add_to_db.js" />
     <entry file="file:///usr/local/lib/python2.7/dist-packages/django/middleware/clickjacking.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1249,13 +1216,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="378">
           <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding />
         </state>
@@ -1269,80 +1235,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/template/response.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="145" column="33" selection-start-line="145" selection-start-column="33" selection-end-line="145" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cities/templates/single_city.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#123#131#1#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cities/static/css/get_favorite.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
+        <state relative-caret-position="4320">
           <caret line="240" column="8" selection-start-line="240" selection-start-column="8" selection-end-line="240" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weather/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cities/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="12" column="78" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="78" />
+        <state relative-caret-position="54">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cities/templates/get_favorite.html">
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/template/response.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cities/static/js/ajax_requests.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        <state relative-caret-position="730">
+          <caret line="145" column="33" selection-start-line="145" selection-start-column="33" selection-end-line="145" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cities/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="1286">
+          <caret line="86" column="17" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="17" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
-            <marker date="1482921544712" expanded="true" signature="7560:7583" ph="SELECT name cities" />
-            <marker date="1482921544712" expanded="true" signature="8018:8079" ph="SELECT citie... cities" />
-            <marker date="1482921544712" expanded="true" signature="8283:8308" ph="SELECT name favorite" />
-            <marker date="1482921544712" expanded="true" signature="8427:8492" ph="SELECT name,... cities" />
-            <marker date="1482921544712" expanded="true" signature="8817:8862" ph="SELECT count... cities" />
-            <marker date="1482921544712" expanded="true" signature="9127:9174" ph="SELECT count... favorite" />
-            <marker date="1482921544712" expanded="true" signature="9419:9469" ph="INSERT INTO favorite... " />
-            <marker date="1482921544712" expanded="true" signature="9786:9833" ph="SELECT count... favorite" />
-            <marker date="1482921544712" expanded="true" signature="10100:10138" ph="DELETE FROM " />
+            <marker date="1483266741872" expanded="true" signature="7476:7499" ph="SELECT name cities" />
+            <marker date="1483266741872" expanded="true" signature="7934:7995" ph="SELECT citie... cities" />
+            <marker date="1483266741872" expanded="true" signature="8199:8224" ph="SELECT name favorite" />
+            <marker date="1483266741872" expanded="true" signature="8343:8408" ph="SELECT name,... cities" />
+            <marker date="1483266741872" expanded="true" signature="8733:8778" ph="SELECT count... cities" />
+            <marker date="1483266741872" expanded="true" signature="9043:9090" ph="SELECT count... favorite" />
+            <marker date="1483266741872" expanded="true" signature="9335:9385" ph="INSERT INTO favorite... " />
+            <marker date="1483266741872" expanded="true" signature="9702:9749" ph="SELECT count... favorite" />
+            <marker date="1483266741872" expanded="true" signature="10016:10054" ph="DELETE FROM " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cities/static/js/ajax_requests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cities/templates/single_city.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="72" selection-start-line="6" selection-start-column="72" selection-end-line="6" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cities/templates/get_favorite.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding>
+            <element signature="e#2570#2578#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cities/templates/get_city_temp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cities/templates/google_map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>

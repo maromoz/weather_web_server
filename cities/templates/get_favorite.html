@@ -31,8 +31,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <input type="submit" value="Update" class="btn btn-default"/>
             </form>
             </div>
-        <div class="container">
-        {% if favorite_list %}
+        <div class="container"></div>
             <h1>Your city weather stats</h1>
             <div class="row">
         <div id="main_container" class="col-sm-offset-4 col-sm-4">
@@ -46,12 +45,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             {% for f in favorite_list %}
                  <div class="main" id={{ f.id }}>
                       <div class="main-grid1">
-                          <button id="delete_from_db" class="close">&#10006;</button>
+                          <button id="delete_from_db" class="close delete_button">&#10006;</button>
                         <div class="main-grid1-pos">
                             <span> <img src={{ f.image }} alt="" class="img-responsive" /> </span>
                         </div>
+                          <a href="http://localhost:8000/get_city_temp/?name={{ f.name }}" >
                             <h2>{{ f.temperature|floatformat:"0" }}<sup class="degree">{{ stuff.degree }}</sup><span></span></h2>
-                        <p>{{f.name}}</p>
+                            <p>{{f.name}}</p>
+                          </a>
                         <div class="main-grid1-grids">
                             <div class="main-grid1-grid-left">
                             </div>
@@ -76,8 +77,5 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
             {% endfor %}
         </div>
-        {% else %}
-            <p>No favorite</p>
-        {% endif %}
     </body>
 </html>
