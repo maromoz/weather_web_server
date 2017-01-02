@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6282e4da-b0d0-46b9-927c-8325e0c26574" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cities/static/js/ajax_requests.js" afterPath="$PROJECT_DIR$/cities/static/js/ajax_requests.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cities/templates/get_favorite.html" afterPath="$PROJECT_DIR$/cities/templates/get_favorite.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cities/templates/google_map.html" afterPath="$PROJECT_DIR$/cities/templates/google_map.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cities/templates/single_city.html" afterPath="$PROJECT_DIR$/cities/templates/single_city.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cities/views.py" afterPath="$PROJECT_DIR$/cities/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weather/urls.py" afterPath="$PROJECT_DIR$/weather/urls.py" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
@@ -47,8 +42,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cities/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1286">
-              <caret line="86" column="17" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="17" />
+            <state relative-caret-position="576">
+              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
                 <marker date="1483266741872" expanded="true" signature="7476:7499" ph="SELECT name cities" />
@@ -68,8 +63,8 @@
       <file leaf-file-name="get_favorite.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cities/templates/get_favorite.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="351">
+              <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
               <folding>
                 <element signature="e#2570#2578#1#HTML" expanded="true" />
               </folding>
@@ -87,10 +82,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="city_weather.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cities/templates/city_weather.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="549">
+              <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="google_map.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cities/templates/google_map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
+            <state relative-caret-position="162">
               <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
@@ -100,7 +105,7 @@
       <file leaf-file-name="get_favorite.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cities/static/css/get_favorite.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4320">
+            <state relative-caret-position="405">
               <caret line="240" column="8" selection-start-line="240" selection-start-column="8" selection-end-line="240" selection-end-column="8" />
               <folding />
             </state>
@@ -131,7 +136,7 @@
         <entry file="file://$PROJECT_DIR$/weather/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="324">
-              <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -140,8 +145,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cities/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+            <state relative-caret-position="90">
+              <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -198,11 +203,11 @@
         <option value="$PROJECT_DIR$/cities/static/js/csrf.js" />
         <option value="$PROJECT_DIR$/cities/static/js/add_to_db.js" />
         <option value="$PROJECT_DIR$/cities/static/js/delete_from_db.js" />
-        <option value="$PROJECT_DIR$/cities/urls.py" />
         <option value="$PROJECT_DIR$/cities/views.py" />
         <option value="$PROJECT_DIR$/cities/static/js/ajax_requests.js" />
-        <option value="$PROJECT_DIR$/cities/templates/get_favorite.html" />
         <option value="$PROJECT_DIR$/cities/templates/single_city.html" />
+        <option value="$PROJECT_DIR$/cities/templates/get_favorite.html" />
+        <option value="$PROJECT_DIR$/cities/urls.py" />
         <option value="$PROJECT_DIR$/cities/templates/google_map.html" />
         <option value="$PROJECT_DIR$/weather/urls.py" />
       </list>
@@ -875,7 +880,14 @@
       <option name="project" value="LOCAL" />
       <updated>1482921700944</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="1.site index is now get_favorite&#10;2.fixed close button bug&#10;3.clicking on favorite city now links to full weather data">
+      <created>1483269560966</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1483269560966</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1001,7 +1013,8 @@
     <MESSAGE value="add city to favorite function passed to the get favorite function, now adding city to the favorite is possible directly from the get_favorite page" />
     <MESSAGE value="using jquery to delete id from the mysql db is now working without needing to refresh the page" />
     <MESSAGE value="adding and removing in get_favorite works with jquery + autocomplete to textbox" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding and removing in get_favorite works with jquery + autocomplete to textbox" />
+    <MESSAGE value="1.site index is now get_favorite&#10;2.fixed close button bug&#10;3.clicking on favorite city now links to full weather data" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.site index is now get_favorite&#10;2.fixed close button bug&#10;3.clicking on favorite city now links to full weather data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1178,6 +1191,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="158" column="21" selection-start-line="158" selection-start-column="21" selection-end-line="158" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1194,13 +1208,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="369">
           <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cities/templates/city_weather.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="51" column="4" selection-start-line="51" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1235,22 +1242,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cities/static/css/get_favorite.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4320">
-          <caret line="240" column="8" selection-start-line="240" selection-start-column="8" selection-end-line="240" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cities/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/python2.7/dist-packages/django/template/response.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="730">
@@ -1259,10 +1250,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cities/static/js/ajax_requests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cities/static/css/get_favorite.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="240" column="8" selection-start-line="240" selection-start-column="8" selection-end-line="240" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cities/templates/single_city.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="72" selection-start-line="6" selection-start-column="72" selection-end-line="6" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cities/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cities/templates/get_city_temp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cities/templates/city_weather.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cities/templates/google_map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cities/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1286">
-          <caret line="86" column="17" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="17" />
+        <state relative-caret-position="576">
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
             <marker date="1483266741872" expanded="true" signature="7476:7499" ph="SELECT name cities" />
@@ -1278,52 +1325,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cities/static/js/ajax_requests.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cities/templates/single_city.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="72" selection-start-line="6" selection-start-column="72" selection-end-line="6" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cities/templates/get_favorite.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        <state relative-caret-position="351">
+          <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
           <folding>
             <element signature="e#2570#2578#1#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cities/templates/get_city_temp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cities/templates/google_map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/weather/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
           <folding />
         </state>
       </provider>
