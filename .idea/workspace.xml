@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6282e4da-b0d0-46b9-927c-8325e0c26574" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weather/urls.py" afterPath="$PROJECT_DIR$/weather/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cities/views.py" afterPath="$PROJECT_DIR$/cities/views.py" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,19 +42,19 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cities/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+            <state relative-caret-position="342">
+              <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
-                <marker date="1483266741872" expanded="true" signature="7476:7499" ph="SELECT name cities" />
-                <marker date="1483266741872" expanded="true" signature="7934:7995" ph="SELECT citie... cities" />
-                <marker date="1483266741872" expanded="true" signature="8199:8224" ph="SELECT name favorite" />
-                <marker date="1483266741872" expanded="true" signature="8343:8408" ph="SELECT name,... cities" />
-                <marker date="1483266741872" expanded="true" signature="8733:8778" ph="SELECT count... cities" />
-                <marker date="1483266741872" expanded="true" signature="9043:9090" ph="SELECT count... favorite" />
-                <marker date="1483266741872" expanded="true" signature="9335:9385" ph="INSERT INTO favorite... " />
-                <marker date="1483266741872" expanded="true" signature="9702:9749" ph="SELECT count... favorite" />
-                <marker date="1483266741872" expanded="true" signature="10016:10054" ph="DELETE FROM " />
+                <marker date="1483436100847" expanded="true" signature="7476:7499" ph="SELECT name cities" />
+                <marker date="1483436100847" expanded="true" signature="7934:7995" ph="SELECT citie... cities" />
+                <marker date="1483436100847" expanded="true" signature="8199:8224" ph="SELECT name favorite" />
+                <marker date="1483436100847" expanded="true" signature="8343:8408" ph="SELECT name,... cities" />
+                <marker date="1483436100847" expanded="true" signature="8733:8778" ph="SELECT count... cities" />
+                <marker date="1483436100847" expanded="true" signature="9043:9090" ph="SELECT count... favorite" />
+                <marker date="1483436100847" expanded="true" signature="9335:9385" ph="INSERT INTO favorite... " />
+                <marker date="1483436100847" expanded="true" signature="9702:9749" ph="SELECT count... favorite" />
+                <marker date="1483436100847" expanded="true" signature="10016:10054" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -75,8 +75,8 @@
       <file leaf-file-name="get_city_temp.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cities/templates/get_city_temp.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+            <state relative-caret-position="162">
+              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -122,22 +122,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ajax_requests.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cities/static/js/ajax_requests.js">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weather/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+            <state relative-caret-position="270">
+              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/weather/urls.py">
+      <file leaf-file-name="weather_web_2_db.py" pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/marom/weather_web_2_db.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-              <folding />
+            <state relative-caret-position="162">
+              <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+              <folding>
+                <marker date="1483435506395" expanded="true" signature="3211:3265" ph="SELECT count... countries" />
+                <marker date="1483435506395" expanded="true" signature="3398:3469" ph="insert into countries... " />
+                <marker date="1483435506395" expanded="true" signature="3597:3813" ph="insert into cities... " />
+                <marker date="1483435506395" expanded="true" signature="5380:5431" ph="select count... cities" />
+                <marker date="1483435506395" expanded="true" signature="5589:5682" ph="select TIMES... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -203,13 +209,14 @@
         <option value="$PROJECT_DIR$/cities/static/js/csrf.js" />
         <option value="$PROJECT_DIR$/cities/static/js/add_to_db.js" />
         <option value="$PROJECT_DIR$/cities/static/js/delete_from_db.js" />
-        <option value="$PROJECT_DIR$/cities/views.py" />
         <option value="$PROJECT_DIR$/cities/static/js/ajax_requests.js" />
         <option value="$PROJECT_DIR$/cities/templates/single_city.html" />
         <option value="$PROJECT_DIR$/cities/templates/get_favorite.html" />
         <option value="$PROJECT_DIR$/cities/urls.py" />
         <option value="$PROJECT_DIR$/cities/templates/google_map.html" />
         <option value="$PROJECT_DIR$/weather/urls.py" />
+        <option value="$USER_HOME$/marom/weather_web_2_db.py" />
+        <option value="$PROJECT_DIR$/cities/views.py" />
       </list>
     </option>
   </component>
@@ -390,7 +397,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/chat_test2" />
+    <property name="last_opened_file_path" value="$USER_HOME$/marom/weather_web_2_db.py" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
@@ -887,7 +894,14 @@
       <option name="project" value="LOCAL" />
       <updated>1483269560966</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="1.site index is now get_favorite-fixed">
+      <created>1483349706863</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1483349706863</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1014,7 +1028,8 @@
     <MESSAGE value="using jquery to delete id from the mysql db is now working without needing to refresh the page" />
     <MESSAGE value="adding and removing in get_favorite works with jquery + autocomplete to textbox" />
     <MESSAGE value="1.site index is now get_favorite&#10;2.fixed close button bug&#10;3.clicking on favorite city now links to full weather data" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.site index is now get_favorite&#10;2.fixed close button bug&#10;3.clicking on favorite city now links to full weather data" />
+    <MESSAGE value="1.site index is now get_favorite-fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.site index is now get_favorite-fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1026,13 +1041,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cities/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1566">
-          <caret line="99" column="5" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cities/static/css/get_city_temp.css.html" />
     <entry file="file://$PROJECT_DIR$/cities/static/css/get_cities.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -1282,14 +1290,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cities/templates/get_city_temp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cities/templates/city_weather.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="549">
@@ -1306,25 +1306,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cities/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-            <marker date="1483266741872" expanded="true" signature="7476:7499" ph="SELECT name cities" />
-            <marker date="1483266741872" expanded="true" signature="7934:7995" ph="SELECT citie... cities" />
-            <marker date="1483266741872" expanded="true" signature="8199:8224" ph="SELECT name favorite" />
-            <marker date="1483266741872" expanded="true" signature="8343:8408" ph="SELECT name,... cities" />
-            <marker date="1483266741872" expanded="true" signature="8733:8778" ph="SELECT count... cities" />
-            <marker date="1483266741872" expanded="true" signature="9043:9090" ph="SELECT count... favorite" />
-            <marker date="1483266741872" expanded="true" signature="9335:9385" ph="INSERT INTO favorite... " />
-            <marker date="1483266741872" expanded="true" signature="9702:9749" ph="SELECT count... favorite" />
-            <marker date="1483266741872" expanded="true" signature="10016:10054" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cities/templates/get_favorite.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
@@ -1337,9 +1318,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/weather/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        <state relative-caret-position="270">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cities/templates/get_city_temp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cities/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+            <marker date="1483436100847" expanded="true" signature="7476:7499" ph="SELECT name cities" />
+            <marker date="1483436100847" expanded="true" signature="7934:7995" ph="SELECT citie... cities" />
+            <marker date="1483436100847" expanded="true" signature="8199:8224" ph="SELECT name favorite" />
+            <marker date="1483436100847" expanded="true" signature="8343:8408" ph="SELECT name,... cities" />
+            <marker date="1483436100847" expanded="true" signature="8733:8778" ph="SELECT count... cities" />
+            <marker date="1483436100847" expanded="true" signature="9043:9090" ph="SELECT count... favorite" />
+            <marker date="1483436100847" expanded="true" signature="9335:9385" ph="INSERT INTO favorite... " />
+            <marker date="1483436100847" expanded="true" signature="9702:9749" ph="SELECT count... favorite" />
+            <marker date="1483436100847" expanded="true" signature="10016:10054" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/marom/weather_web_2_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+          <folding>
+            <marker date="1483435506395" expanded="true" signature="3211:3265" ph="SELECT count... countries" />
+            <marker date="1483435506395" expanded="true" signature="3398:3469" ph="insert into countries... " />
+            <marker date="1483435506395" expanded="true" signature="3597:3813" ph="insert into cities... " />
+            <marker date="1483435506395" expanded="true" signature="5380:5431" ph="select count... cities" />
+            <marker date="1483435506395" expanded="true" signature="5589:5682" ph="select TIMES... " />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -55,7 +55,7 @@ def get_city_temp(request):
         return HttpResponse("Oops, the city you have asked is not available")
     for item in city_list:
         city_temperature = item.temperature
-        if city_temperature >= 0 and city_temperature <= 9:
+        if city_temperature <= 0 and city_temperature <= 9:
             image = "../static/images/cloud-37011_640.png"
         elif city_temperature >= 10 and city_temperature <= 19:
             image = "../static/images/weather-157114_640.png"
