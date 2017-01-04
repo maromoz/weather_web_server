@@ -4,7 +4,7 @@
         <div class="main-grid1-pos">
             <span> <img src={{ favorite.image }} alt="" class="img-responsive" /> </span>
         </div>
-          <a href="http://localhost:8000/get_city_temp/?name={{ favorite.name }}" >
+          <a href="get_city_temp/?name={{ favorite.name }}" >
             <h2>{{ favorite.temperature|floatformat:"0" }}<sup class="degree">{{ stuff.degree }}</sup><span></span></h2>
             <p>{{favorite.name}}</p>
               </a>
