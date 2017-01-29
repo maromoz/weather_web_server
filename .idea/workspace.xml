@@ -43,19 +43,18 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cities/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="144">
+              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
               <folding>
-                <element signature="e#24#37#0" expanded="true" />
-                <marker date="1485686818355" expanded="true" signature="7333:7356" ph="SELECT name cities" />
-                <marker date="1485686818355" expanded="true" signature="7791:7852" ph="SELECT citie... cities" />
-                <marker date="1485686818355" expanded="true" signature="8056:8081" ph="SELECT name favorite" />
-                <marker date="1485686818355" expanded="true" signature="8200:8265" ph="SELECT name,... cities" />
-                <marker date="1485686818355" expanded="true" signature="8590:8635" ph="SELECT count... cities" />
-                <marker date="1485686818355" expanded="true" signature="8900:8947" ph="SELECT count... favorite" />
-                <marker date="1485686818355" expanded="true" signature="9192:9242" ph="INSERT INTO favorite... " />
-                <marker date="1485686818355" expanded="true" signature="9559:9606" ph="SELECT count... favorite" />
-                <marker date="1485686818355" expanded="true" signature="9873:9911" ph="DELETE FROM " />
+                <marker date="1485696352770" expanded="true" signature="7059:7082" ph="SELECT name cities" />
+                <marker date="1485696352770" expanded="true" signature="7517:7578" ph="SELECT citie... cities" />
+                <marker date="1485696352770" expanded="true" signature="7782:7807" ph="SELECT name favorite" />
+                <marker date="1485696352770" expanded="true" signature="7926:7991" ph="SELECT name,... cities" />
+                <marker date="1485696352770" expanded="true" signature="8316:8361" ph="SELECT count... cities" />
+                <marker date="1485696352770" expanded="true" signature="8626:8673" ph="SELECT count... favorite" />
+                <marker date="1485696352770" expanded="true" signature="8918:8968" ph="INSERT INTO favorite... " />
+                <marker date="1485696352770" expanded="true" signature="9285:9332" ph="SELECT count... favorite" />
+                <marker date="1485696352770" expanded="true" signature="9599:9637" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -904,7 +903,14 @@
       <option name="project" value="LOCAL" />
       <updated>1483543082924</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="views.py fixed">
+      <created>1485686837414</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1485686837414</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1036,7 +1042,8 @@
     <MESSAGE value="weather banner image bug fixed 2.0 and final" />
     <MESSAGE value="aws machine allowed to reach website" />
     <MESSAGE value="redirecting in templates now working for remote machine" />
-    <option name="LAST_COMMIT_MESSAGE" value="redirecting in templates now working for remote machine" />
+    <MESSAGE value="views.py fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="views.py fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1362,19 +1369,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cities/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="144">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
           <folding>
-            <element signature="e#24#37#0" expanded="true" />
-            <marker date="1485686818355" expanded="true" signature="7333:7356" ph="SELECT name cities" />
-            <marker date="1485686818355" expanded="true" signature="7791:7852" ph="SELECT citie... cities" />
-            <marker date="1485686818355" expanded="true" signature="8056:8081" ph="SELECT name favorite" />
-            <marker date="1485686818355" expanded="true" signature="8200:8265" ph="SELECT name,... cities" />
-            <marker date="1485686818355" expanded="true" signature="8590:8635" ph="SELECT count... cities" />
-            <marker date="1485686818355" expanded="true" signature="8900:8947" ph="SELECT count... favorite" />
-            <marker date="1485686818355" expanded="true" signature="9192:9242" ph="INSERT INTO favorite... " />
-            <marker date="1485686818355" expanded="true" signature="9559:9606" ph="SELECT count... favorite" />
-            <marker date="1485686818355" expanded="true" signature="9873:9911" ph="DELETE FROM " />
+            <marker date="1485696352770" expanded="true" signature="7059:7082" ph="SELECT name cities" />
+            <marker date="1485696352770" expanded="true" signature="7517:7578" ph="SELECT citie... cities" />
+            <marker date="1485696352770" expanded="true" signature="7782:7807" ph="SELECT name favorite" />
+            <marker date="1485696352770" expanded="true" signature="7926:7991" ph="SELECT name,... cities" />
+            <marker date="1485696352770" expanded="true" signature="8316:8361" ph="SELECT count... cities" />
+            <marker date="1485696352770" expanded="true" signature="8626:8673" ph="SELECT count... favorite" />
+            <marker date="1485696352770" expanded="true" signature="8918:8968" ph="INSERT INTO favorite... " />
+            <marker date="1485696352770" expanded="true" signature="9285:9332" ph="SELECT count... favorite" />
+            <marker date="1485696352770" expanded="true" signature="9599:9637" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>

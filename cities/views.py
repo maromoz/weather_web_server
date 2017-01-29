@@ -1,28 +1,17 @@
 # -*- coding: utf-8 -*-
-import urllib
 import urllib2
 import json
-from audioop import reverse
 
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 
-from django.http import HttpResponseRedirect
-from django.shortcuts import render, render_to_response, redirect
-# Create your views here.
+from django.shortcuts import render_to_response
 from django.db import connection
 from django.http import HttpResponse
-from django.template import RequestContext
 
 from cities.models import Cities, Favorite
 from django.template import Context
 from django.template import loader
-from django.utils.encoding import smart_str, smart_unicode
-import math
-import sys
-
-reload(sys)
-sys.setdefaultencoding('utf8')
 
 
 def get_cities(request):
@@ -41,15 +30,15 @@ def get_cities(request):
 
 def get_city_temp(request):
     params = request.GET
-    if 'name' not in request.GET:
+    if 'name' not in params:
         template = loader.get_template('get_city_temp.html')
         return HttpResponse(template.render())
 
     if params["name"] == "":
-        response = "Please enter a city and press enter"
+        response = "Please go back, enter a city and press enter"
         return HttpResponse(response)
 
-    name = request.GET.get('name')
+    name = params["name"]
     city_list = Cities.objects.filter(name=name)
     if len(city_list) == 0:
         return HttpResponse("Oops, the city you have asked is not available")
@@ -60,7 +49,9 @@ def get_city_temp(request):
         image = "../static/images/weather-157114_640.png"
     elif city_temperature >= 20:
         image = "../static/images/sun-159392_640.png"
-    url = 'https://maps.googleapis.com/maps/api/geocode/json?address='+name+'&key=AIzaSyDeJsN1m7f1gmun0G3NZedinAaAJLBwZkE'
+
+    # Google maps
+    url = 'https://maps.googleapis.com/maps/api/geocode/json?address=' + name + '&key=AIzaSyDeJsN1m7f1gmun0G3NZedinAaAJLBwZkE'
     weather = urllib2.urlopen(url)
     wjson = weather.read()
     wjdata = json.loads(wjson)
@@ -74,6 +65,7 @@ def get_city_temp(request):
         "geocoding": {'lat': lat, 'lng': lng},
     })
     return HttpResponse(template.render(context))
+
 
 @csrf_exempt
 def get_favorite(request):
@@ -93,8 +85,7 @@ def get_favorite(request):
             image = "../static/images/weather-157114_640.png"
         elif city_temperature >= 20:
             image = "../static/images/sun-159392_640.png"
-        else:
-            image = "../static/images/cloud-37011_640.png"
+
         filtered_cities[0].image = image
         city_list.append(filtered_cities[0])
         if degree_system == "Fahrenheit":
@@ -113,15 +104,15 @@ def get_favorite(request):
 
 def add_city_to_favorite(request):
     params = request.GET
-    if 'add' not in request.GET:
+    if 'add' not in params:
         template = loader.get_template('add_city_to_favorite.html')
         return HttpResponse(template.render())
 
     if params["add"] == "":
-        response = "Please enter a city and press enter"
+        response = "Please go back, enter a city and press enter"
         return HttpResponse(response)
 
-    name = request.GET.get('add')
+    name = params["add"]
     city_list = Cities.objects.filter(name=name)
     if len(city_list) == 0:
         return HttpResponse("The city does not exists please choose a different city from the cities list")
@@ -129,22 +120,25 @@ def add_city_to_favorite(request):
     favorite_list = Favorite.objects.filter(city_id=city_list_id)
     if len(favorite_list) >= 1:
         return HttpResponse("The city already exists in the favorite list")
-    f = Favorite(city_id=city_list_id)
-    f.save()
+    try:
+        f = Favorite(city_id=city_list_id)
+        f.save()
+    except:
+        return HttpResponse("The city was not added to your favorite list ):, please go back and try a different city")
     return HttpResponse("The city was added to your favorite list (:")
 
 
 def remove_city_from_favorite(request):
     params = request.GET
-    if 'remove' not in request.GET:
+    if 'remove' not in params:
         template = loader.get_template('remove_city_from_favorite.html')
         return HttpResponse(template.render())
 
     if params["remove"] == "":
-        response = "Please enter a city and press enter"
+        response = "Please go back, enter a city and press enter"
         return HttpResponse(response)
 
-    name = request.GET.get('remove')
+    name = params["remove"]
     city_list = Cities.objects.filter(name=name)
     city_list_id = city_list[0].id
     favorite_list = Favorite.objects.filter(city_id=city_list_id)
@@ -160,6 +154,7 @@ def delete_id_from_db(request):
     favorite.delete()
     return HttpResponse()
 
+
 @csrf_exempt
 def get_auto_complete_cities(request):
     start_of_city_name = request.GET.get('text')
@@ -168,7 +163,8 @@ def get_auto_complete_cities(request):
     for city in possible_cities:
         possible_cities_names.append(city.name)
 
-    return JsonResponse({'possible_cities':possible_cities_names})
+    return JsonResponse({'possible_cities': possible_cities_names})
+
 
 @csrf_exempt
 def add_id_to_db(request):
@@ -178,7 +174,7 @@ def add_id_to_db(request):
     new_favorite = Favorite(city_id=city_to_add.id)
     new_favorite.save()
 
-    #render html element for js
+    # render html element for js
     degree_system = request.GET.get('degree')
     degree = "℃"
     if degree_system == "Fahrenheit":
@@ -192,16 +188,15 @@ def add_id_to_db(request):
         image = "../static/images/weather-157114_640.png"
     elif city_temperature >= 20:
         image = "../static/images/sun-159392_640.png"
-    else:
-        image = "../static/images/cloud-37011_640.png"
-    city_to_add.image = image
 
+    city_to_add.image = image
 
     context = Context({
         'favorite': city_to_add,
         "stuff": {'degree': degree},
     })
     return render_to_response('single_city.html', context)
+
 
 #############################################OLD############################################
 
