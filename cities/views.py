@@ -53,20 +53,19 @@ def get_city_temp(request):
     city_list = Cities.objects.filter(name=name)
     if len(city_list) == 0:
         return HttpResponse("Oops, the city you have asked is not available")
-    for item in city_list:
-        city_temperature = item.temperature
-        if city_temperature <= 9:
-            image = "../static/images/cloud-37011_640.png"
-        elif city_temperature >= 10 and city_temperature <= 19:
-            image = "../static/images/weather-157114_640.png"
-        elif city_temperature >= 20:
-            image = "../static/images/sun-159392_640.png"
-        url = 'https://maps.googleapis.com/maps/api/geocode/json?address='+name+'&key=AIzaSyDeJsN1m7f1gmun0G3NZedinAaAJLBwZkE'
-        weather = urllib2.urlopen(url)
-        wjson = weather.read()
-        wjdata = json.loads(wjson)
-        lat = wjdata['results'][0]['geometry']['location']['lat']
-        lng = wjdata['results'][0]['geometry']['location']['lng']
+    city_temperature = city_list[0].temperature
+    if city_temperature <= 9:
+        image = "../static/images/cloud-37011_640.png"
+    elif city_temperature >= 10 and city_temperature <= 19:
+        image = "../static/images/weather-157114_640.png"
+    elif city_temperature >= 20:
+        image = "../static/images/sun-159392_640.png"
+    url = 'https://maps.googleapis.com/maps/api/geocode/json?address='+name+'&key=AIzaSyDeJsN1m7f1gmun0G3NZedinAaAJLBwZkE'
+    weather = urllib2.urlopen(url)
+    wjson = weather.read()
+    wjdata = json.loads(wjson)
+    lat = wjdata['results'][0]['geometry']['location']['lat']
+    lng = wjdata['results'][0]['geometry']['location']['lng']
 
     template = loader.get_template('city_weather.html')
     context = Context({
@@ -126,8 +125,7 @@ def add_city_to_favorite(request):
     city_list = Cities.objects.filter(name=name)
     if len(city_list) == 0:
         return HttpResponse("The city does not exists please choose a different city from the cities list")
-    for item in city_list:
-        city_list_id = item.id
+    city_list_id = city_list[0].id
     favorite_list = Favorite.objects.filter(city_id=city_list_id)
     if len(favorite_list) >= 1:
         return HttpResponse("The city already exists in the favorite list")
@@ -148,8 +146,7 @@ def remove_city_from_favorite(request):
 
     name = request.GET.get('remove')
     city_list = Cities.objects.filter(name=name)
-    for item in city_list:
-        city_list_id = item.id
+    city_list_id = city_list[0].id
     favorite_list = Favorite.objects.filter(city_id=city_list_id)
     if len(favorite_list) == 0:
         return HttpResponse("The city does not exists in the favorite list")
