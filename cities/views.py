@@ -76,6 +76,7 @@ def get_favorite(request):
         filtered_cities = Cities.objects.filter(id=favorite.city_id)
         if len(filtered_cities) == 0:
             print "Warning: no cities found for id %d " % favorite.city_id
+            continue
         if len(filtered_cities) > 1:
             print "Warning: more than 1 city found for id %d, using the first city" % favorite.city_id
         city_temperature = filtered_cities[0].temperature
@@ -123,8 +124,8 @@ def add_city_to_favorite(request):
     try:
         f = Favorite(city_id=city_list_id)
         f.save()
-    except:
-        return HttpResponse("The city was not added to your favorite list ):, please go back and try a different city")
+    except Exception as e:
+        return HttpResponse("error while adding city, the error was %s" % e)
     return HttpResponse("The city was added to your favorite list (:")
 
 
