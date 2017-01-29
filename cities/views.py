@@ -141,6 +141,8 @@ def remove_city_from_favorite(request):
 
     name = params["remove"]
     city_list = Cities.objects.filter(name=name)
+    if len(city_list) == 0:
+        return HttpResponse("The city does not exists please choose a different city from the cities list")
     city_list_id = city_list[0].id
     favorite_list = Favorite.objects.filter(city_id=city_list_id)
     if len(favorite_list) == 0:
